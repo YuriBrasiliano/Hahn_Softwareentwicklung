@@ -1,6 +1,8 @@
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Authentication;
+using Hahn_Softwareentwicklung.Application.Common.Interfaces.Persistence;
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Services;
 using Hahn_Softwareentwicklung.Infrastructure.Authentication;
+using Hahn_Softwareentwicklung.Infrastructure.Persistence;
 using Hahn_Softwareentwicklung.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +18,7 @@ public static class DependencyInjection
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddScoped<IUserRepository, UserRepository>();
         return services;
     }
 }

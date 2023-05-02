@@ -6,7 +6,7 @@ CRUD Application using DDD Pattern, .NET6 and Angular.
 
 These instructions will allow you to obtain a copy of the project up and running on your local machine for development and testing purposes.Refer to Deployment to learn how to deploy the project.
 
-### 📋 Pré-requisitos
+### 📋 Requirements
 
 De que coisas você precisa para instalar o software e como instalá-lo?
 
@@ -14,8 +14,7 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 Dar exemplos
 ```
 
-### 🔧 Instalação
-
+### 🔧 Instalation
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
 Diga como essa etapa será:
