@@ -1,0 +1,12 @@
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.deps.json
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.csproj.AssemblyReference.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.AssemblyInfoInputs.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.AssemblyInfo.cs
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\refint\Hahn_Softwareentwicklung.Infrastructure.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\ref\Hahn_Softwareentwicklung.Infrastructure.dll

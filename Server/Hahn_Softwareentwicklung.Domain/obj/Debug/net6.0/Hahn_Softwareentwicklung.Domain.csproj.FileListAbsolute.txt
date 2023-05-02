@@ -1,0 +1,12 @@
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.deps.json
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.csproj.AssemblyReference.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.AssemblyInfoInputs.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.AssemblyInfo.cs
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.csproj.CoreCompileInputs.cache
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\refint\Hahn_Softwareentwicklung.Domain.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\Hahn_Softwareentwicklung.Domain.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Domain\obj\Debug\net6.0\ref\Hahn_Softwareentwicklung.Domain.dll
