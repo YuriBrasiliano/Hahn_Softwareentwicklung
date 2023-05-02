@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn_Softwareentwicklung.Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn_Softwareentwicklung.Infrastructure", "Hahn_Softwareentwicklung.Infrastructure\Hahn_Softwareentwicklung.Infrastructure.csproj", "{389476E1-A538-46E4-9650-9D4D67A2341B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn_Softwareentwicklung.Application", "Hahn_Softwareentwicklung.Application\Hahn_Softwareentwicklung.Application.csproj", "{60308B43-7A12-4072-A601-1AE29E743204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{389476E1-A538-46E4-9650-9D4D67A2341B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{389476E1-A538-46E4-9650-9D4D67A2341B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{389476E1-A538-46E4-9650-9D4D67A2341B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60308B43-7A12-4072-A601-1AE29E743204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60308B43-7A12-4072-A601-1AE29E743204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60308B43-7A12-4072-A601-1AE29E743204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60308B43-7A12-4072-A601-1AE29E743204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

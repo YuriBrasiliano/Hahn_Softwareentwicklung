@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Hahn_Softwareentwicklung.Application\Hahn_Softwareentwicklung.Application.csproj" />
+    <ProjectReference Include="..\Hahn_Softwareentwicklung.Domain\Hahn_Softwareentwicklung.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
