@@ -10,3 +10,8 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\D
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\refint\Hahn_Softwareentwicklung.Infrastructure.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.pdb
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\ref\Hahn_Softwareentwicklung.Infrastructure.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Application.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Application.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Infrastructure\obj\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.csproj.CopyComplete

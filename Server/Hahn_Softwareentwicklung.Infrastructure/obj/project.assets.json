@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Hahn_Softwareentwicklung.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hahn_Softwareentwicklung.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Hahn_Softwareentwicklung.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hahn_Softwareentwicklung.Application.dll": {}
+        }
+      },
+      "Hahn_Softwareentwicklung.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hahn_Softwareentwicklung.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hahn_Softwareentwicklung.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Hahn_Softwareentwicklung.Application/1.0.0": {
+      "type": "project",
+      "path": "../Hahn_Softwareentwicklung.Application/Hahn_Softwareentwicklung.Application.csproj",
+      "msbuildProject": "../Hahn_Softwareentwicklung.Application/Hahn_Softwareentwicklung.Application.csproj"
+    },
+    "Hahn_Softwareentwicklung.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Hahn_Softwareentwicklung.Domain/Hahn_Softwareentwicklung.Domain.csproj",
+      "msbuildProject": "../Hahn_Softwareentwicklung.Domain/Hahn_Softwareentwicklung.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Hahn_Softwareentwicklung.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\yurib\\.nuget\\packages\\": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Application\\Hahn_Softwareentwicklung.Application.csproj": {
+              "projectPath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Application\\Hahn_Softwareentwicklung.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

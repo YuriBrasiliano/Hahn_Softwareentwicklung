@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Hahn_Softwareentwicklung.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Hahn_Softwareentwicklung.Application": "1.0.0"
+        },
         "runtime": {
           "Hahn_Softwareentwicklung.Infrastructure.dll": {}
+        }
+      },
+      "Hahn_Softwareentwicklung.Application/1.0.0": {
+        "dependencies": {
+          "Hahn_Softwareentwicklung.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Hahn_Softwareentwicklung.Application.dll": {}
+        }
+      },
+      "Hahn_Softwareentwicklung.Domain/1.0.0": {
+        "runtime": {
+          "Hahn_Softwareentwicklung.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Hahn_Softwareentwicklung.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hahn_Softwareentwicklung.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hahn_Softwareentwicklung.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
