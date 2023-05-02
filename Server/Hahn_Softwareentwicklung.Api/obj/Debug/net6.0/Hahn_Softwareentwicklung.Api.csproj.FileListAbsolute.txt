@@ -29,3 +29,14 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.pdb
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.pdb
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

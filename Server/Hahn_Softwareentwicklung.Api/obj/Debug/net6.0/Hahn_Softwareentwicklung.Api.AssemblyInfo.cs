@@ -10,6 +10,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("3f0c7b9e-33ce-46c8-b4ba-cf5b52174457")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hahn_Softwareentwicklung.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
