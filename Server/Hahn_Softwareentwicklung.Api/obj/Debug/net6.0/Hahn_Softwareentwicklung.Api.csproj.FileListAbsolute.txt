@@ -28,3 +28,4 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Hahn_Softwareentwicklung.Application.pdb
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Hahn_Softwareentwicklung.Infrastructure.pdb
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Hahn_Softwareentwicklung.Domain.pdb
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

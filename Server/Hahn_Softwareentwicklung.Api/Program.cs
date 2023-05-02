@@ -1,9 +1,13 @@
-using Hahn_Softwareentwicklung.Application.Services.Authentication;
+using Hahn_Softwareentwicklung.Application;
+using Hahn_Softwareentwicklung.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 {
     // Add services to the container
+    builder.Services
+        .AddApplication()
+        .AddInfrastructure();
     builder.Services.AddControllers();
 }
 

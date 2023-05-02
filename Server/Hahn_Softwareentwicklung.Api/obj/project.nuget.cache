@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x6+c4hQ0iCn6+nH8W3TiWTQjpFerRtuDBJtBf6Y8wTYaROCe9i22DNi8GBnoRHmuPd4vnNbQY9j5Z/b0vB8/Rw==",
+  "dgSpecHash": "RpL3a6j+odBLIGGjgSjG1aZv2jF9G4oCWrN/X/sYjxuGmP4KaRru4iNVILXbAWboOQ0vHepPFS24oP5yrn2qiQ==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Api\\Hahn_Softwareentwicklung.Api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\yurib\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
