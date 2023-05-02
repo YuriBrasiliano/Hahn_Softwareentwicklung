@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pm18BkiioEw72YBAwZ2DJuSzyt3IFOZsIwV14iS6TPJ8z+OnLGOxdrImdSwdIR7aa/VA1Ha6B71Z8fMK52L7NQ==",
+  "dgSpecHash": "tdLhdoDcSWza7f0N229zK7K4T/hRn8j2sHANbePb7gyf6FReC1/XQ/J0+sUyRCdJZieBFWPNmfNcF8JJWtnB1A==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Infrastructure\\Hahn_Softwareentwicklung.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yurib\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

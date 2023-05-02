@@ -13,4 +13,8 @@
     <ProjectReference Include="..\Hahn_Softwareentwicklung.Infrastructure\Hahn_Softwareentwicklung.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="1.2.1" />
+  </ItemGroup>
+
 </Project>

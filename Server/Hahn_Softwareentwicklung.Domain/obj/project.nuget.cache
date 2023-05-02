@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "t5vdNVL2HHHVS/kojKXY5ptmeqnj2kc+GfZceslTXyBy04Yxn6uWPk4y1gDvfAKP3LMHXZ4fHuDEyHt/VOcT4g==",
+  "dgSpecHash": "aJxHgox7//gE3m7z+9xEIZT7/YfvjjzUEG7lB7ylEjmjTz4sx6N45ZXJTmp9mxRBJ8o2hONMZB4Y1AIZCGUZpg==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Domain\\Hahn_Softwareentwicklung.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\yurib\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

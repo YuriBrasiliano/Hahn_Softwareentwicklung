@@ -1,6 +1,8 @@
+using ErrorOr;
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Authentication;
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Persistence;
 using Hahn_Softwareentwicklung.Domain.Entities;
+using Hahn_Softwareentwicklung.Domain.Common.Errors;
 
 namespace Hahn_Softwareentwicklung.Application.Services.Authentication;
 
@@ -15,32 +17,32 @@ public class AuthenticationService : IAuthenticationService
         _userRepository = userRepository;
     }
 
-    public AuthenticationResult Login(string email, string password)
+    public ErrorOr<AuthenticationResult> Login(string email, string password)
     {
         // 1. Validate User Exists
         if(_userRepository.GetUserByEmail(email) is not User user)
         {
-            throw new Exception("User does not exist!");
+            return Errors.Authentication.InvalidCredentials;
         }
 
         //2. Validate the password
         if(user.Password != password)
         {
-            throw new Exception ("Invalid Password");
+            return Errors.Authentication.InvalidCredentials;
         }
 
         //3. Create Token
-        var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
+        var token = _jwtTokenGenerator.GenerateToken(user);
         
-        return new AuthenticationResult(user.Id, user.FirstName, user.LastName, email, token);
+        return new AuthenticationResult(user, token);
     }
 
-    public AuthenticationResult Register(string firstName, string lastName, string email, string password)
+    public ErrorOr<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
     {
         //Validate user does not already exists
         if(_userRepository.GetUserByEmail(email) is not null)
         {
-            throw new Exception("User already exists!");
+            return Errors.User.DuplicateEmail;
         }
 
         //Create user (generate unique ID)
@@ -55,9 +57,9 @@ public class AuthenticationService : IAuthenticationService
         _userRepository.Add(user);
 
         //Create the token
-        var token = _jwtTokenGenerator.GenerateToken(user.Id, firstName, lastName);
+        var token = _jwtTokenGenerator.GenerateToken(user);
 
 
-        return new AuthenticationResult(user.Id, firstName, lastName, email, token);
+        return new AuthenticationResult(user, token);
     }
 }

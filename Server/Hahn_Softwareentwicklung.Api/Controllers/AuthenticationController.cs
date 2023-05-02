@@ -1,13 +1,14 @@
 using Hahn_Softwareentwicklung.Application.Services.Authentication;
 using Hahn_Softwareentwicklung.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using ErrorOr;
 
 namespace Hahn_Softwareentwicklung.Api.Controllers;
 
 
-[ApiController]
+
 [Route("auth")]
-public class AuthenticationController : ControllerBase
+public class AuthenticationController : ApiController
 {
     private readonly IAuthenticationService _authenticationService;
 
@@ -19,37 +20,41 @@ public class AuthenticationController : ControllerBase
     [HttpPost("register")]
     public IActionResult Register(RegisterRequest request)
     {
-        var authResult = _authenticationService.Register(
+        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
             request.FirstName,
             request.LastName,
-            request.Email, 
+            request.Email,
             request.Password);
 
-        var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
-            authResult.Token
+        return authResult.Match
+        (
+            authResult => Ok(MapAuthResult(authResult)),
+            errors => Problem(errors)
         );
-
-        return Ok(response);
     }
+
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(
-            request.Email, 
+        ErrorOr<AuthenticationResult> authResult = _authenticationService.Login(
+            request.Email,
             request.Password);
 
-        var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.FirstName,
-            authResult.LastName,
-            authResult.Email,
+        return authResult.Match
+        (
+            authResult => Ok(MapAuthResult(authResult)),
+            errors => Problem(errors)
+        );
+    }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    {
+        return new AuthenticationResponse(
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
             authResult.Token
         );
-
-        return Ok(response);
     }
 }

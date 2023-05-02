@@ -5,6 +5,7 @@ using System.Text;
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Authentication;
 using Hahn_Softwareentwicklung.Application.Common.Interfaces.Services;
 using Microsoft.Extensions.Options;
+using Hahn_Softwareentwicklung.Domain.Entities;
 
 namespace Hahn_Softwareentwicklung.Infrastructure.Authentication;
 
@@ -19,7 +20,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         _jwtSettings = jwtOptions.Value;
     }
 
-    public string GenerateToken(Guid userId, string firstName, string lastName)
+    public string GenerateToken(User user)
     {
         var signingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(
@@ -28,10 +29,10 @@ public class JwtTokenGenerator : IJwtTokenGenerator
             
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
+            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(JwtRegisteredClaimNames.GivenName, firstName),
-            new Claim(JwtRegisteredClaimNames.FamilyName, lastName),
+            new Claim(JwtRegisteredClaimNames.GivenName, user.FirstName),
+            new Claim(JwtRegisteredClaimNames.FamilyName, user.LastName),
 
         };
 
