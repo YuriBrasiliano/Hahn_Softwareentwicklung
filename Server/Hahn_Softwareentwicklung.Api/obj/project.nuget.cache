@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZA3QtiIgxGW4db2fd5uAr68WT6r2Yp7c0AvGD13Mi9gj9cl5vXR2QAyBgITJ7fzDfOg+e7wZioME//6bJx2itQ==",
+  "dgSpecHash": "87Zh5NscvAb+ud5MLIfhVnAbuE7MrDfMPyDzLNYN1GhBT5mYHmVwAYxl6AoRK7YpaxQcQ6TVryb7BHgjJoLWpw==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Api\\Hahn_Softwareentwicklung.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yurib\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

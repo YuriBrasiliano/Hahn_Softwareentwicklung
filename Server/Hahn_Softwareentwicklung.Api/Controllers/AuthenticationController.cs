@@ -1,53 +1,57 @@
-using Hahn_Softwareentwicklung.Application.Services.Authentication;
+using Hahn_Softwareentwicklung.Application.Authentication.Common;
 using Hahn_Softwareentwicklung.Contracts.Authentication;
+using Hahn_Softwareentwicklung.Application.Authentication.Commands.Register;
 using Microsoft.AspNetCore.Mvc;
 using ErrorOr;
+using MediatR;
+using Hahn_Softwareentwicklung.Application.Authentication.Queries.Login;
+
 
 namespace Hahn_Softwareentwicklung.Api.Controllers;
 
 
 
 [Route("auth")]
-public class AuthenticationController : ApiController
-{
-    private readonly IAuthenticationService _authenticationService;
 
-    public AuthenticationController(IAuthenticationService authenticationService)
+public class AuthenticationController : ApiController{
+
+    private readonly ISender _mediator;
+
+    public AuthenticationController(ISender mediator)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
-            request.FirstName,
+        var command = new RegisterCommand(request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
+        ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
-        return authResult.Match
-        (
+        return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
             errors => Problem(errors)
         );
     }
+
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
-    {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Login(
-            request.Email,
-            request.Password);
+    public async Task<IActionResult> Login(LoginRequest request){
 
-        return authResult.Match
-        (
+        var query = new LoginQuery(request.Email, request.Password);
+        
+        var authResult = await _mediator.Send(query);       
+        
+        return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
-            errors => Problem(errors)
+           errors => Problem(errors)
         );
     }
 
-        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
     {
         return new AuthenticationResponse(
             authResult.User.Id,
@@ -57,4 +61,5 @@ public class AuthenticationController : ApiController
             authResult.Token
         );
     }
+
 }
