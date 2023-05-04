@@ -1,0 +1,121 @@
+<app-card [headerText]="'Student Portal'" [isAddButtonVisible]="true"  [cardClass]="'bg-secondary'" (onAddEmit)="onAddStudent($event)">
+
+      <div class="row pb-3">
+        <div class="col-md-3">
+          <input type="text" #candidate class="form-control" placeholder="Candidate"
+           value="123">
+        </div>
+        <div class="col-md-3">
+          <input type="date" class="form-control" placeholder="Form date" [(ngModel)]="searchObj.FromDate">
+        </div>
+        <div class="col-md-3">
+          <input type="date" class="form-control" placeholder="To date" [(ngModel)]="searchObj.ToDate">
+        </div>
+        <div class="col-md-3">
+         <button class="btn btn-info" (click)="getAllAttendance()">Search</button>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table [ngClass]="theme" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Sr.No</th>
+                <th>attendance Date</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let item of studentArr; let i = index">
+                <tr *ngIf="item.candidateName != 'Priya'">
+                  <td>{{i+1}}</td>
+                  <td>{{item.attendanceDate | date:'dd-MMM-yyyy'}}</td>
+                  <td>{{item.candidateName}}</td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+</app-card>
+
+
+<!-- The Modal -->
+<div class="modal" id="studentModel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header bg-success text-white">
+        <h6 class="modal-title">Add Student Details</h6>
+        <button type="button" class="btn-close btn-sm text-white" (click)="onCloseModel()"></button>
+      </div>
+      <form [formGroup]="studentForm">
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-8">
+                  <label class="for-label">Full Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Full Name"
+                    formControlName="fullName" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <label class="for-label">Mobile</label>
+                  <input type="text" name="mobile" class="form-control" placeholder="Mobile Number"
+                    formControlName="mobile" />
+                </div>
+                <div class="col-md-5">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Email" class="form-control" formControlName="email" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <label>Address</label>
+                  <textarea name="" class="form-control" rows="3" name="address" formControlName="address"
+                    placeholder="Address"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" formArrayName="familyDetails">
+              <div class="col-md-2">
+                <button class="btn btn-success btn-sm" (click)="addRelation()">Add</button>
+              </div>
+              <div class="row" *ngFor="let child of famlies.controls; let i = index" formGroupName="{{i}}">
+                <div class="col-md-4">
+                  <label class="for-label">Name</label>
+                  <input type="text" name="mobile" class="form-control" formControlName="name" />
+                </div>
+                <div class="col-md-4">
+                  <label>Relation</label>
+                  <input type="email" name="email" class="form-control" formControlName="relation" />
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-success btn-sm" (click)="removeRelation(i)">remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <button class="btn btn-secondary btn-sm">Cancel</button>
+            </div>
+            <div class="col-md-6 text-center">
+              <button class="btn btn-success btn-sm" (click)="saveStudent()">Save</button>
+              <button class="btn btn-success btn-sm" (click)="onUpdate()"
+                *ngIf="student.studentId !== 0">Update</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

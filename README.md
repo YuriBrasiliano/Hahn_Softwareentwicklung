@@ -2,6 +2,8 @@
 
 CRUD Application using DDD Pattern, .NET6 and Angular.
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+
 ## 🚀 Starting
 
 These instructions will allow you to obtain a copy of the project up and running on your local machine for development and testing purposes.Refer to Deployment to learn how to deploy the project.
