@@ -44,3 +44,6 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\MediatR.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.Core.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.DependencyInjection.dll
