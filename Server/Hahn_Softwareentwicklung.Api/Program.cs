@@ -5,18 +5,26 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-{
-    // Add services to the container
+
+{   
+    builder.Services.AddCors();
     builder.Services
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
     builder.Services.AddControllers();
     builder.Services.AddSingleton<ProblemDetailsFactory, HahnProblemDetailsFactory>();
 }
+ 
 
 var app = builder.Build();
 
+
 {
+    app.UseCors(c => {
+        c.AllowAnyHeader();
+        c.AllowAnyMethod();
+        c.AllowAnyOrigin();
+    });
     app.UseExceptionHandler("/error");
     app.UseHttpsRedirection();
     app.MapControllers();
