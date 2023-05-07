@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FDoZVGAWuYlmLMmkC8UL89C/XUF25eyoPqjko+L3K3F/tXz6pqFgpSDqUOPHd8OaskFGEmt7sfPAt+sgh8kPiA==",
+  "dgSpecHash": "gJ+HhC6BfYVsXhEnWCov9/mSLnFfwH0YC5CAx/HUb0Q0TQVRDe/rvygPI53jV8jfUtKUlvsrVeNG0cm0G+qt8Q==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Api\\Hahn_Softwareentwicklung.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yurib\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",

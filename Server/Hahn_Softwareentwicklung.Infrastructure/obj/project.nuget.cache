@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QFhEoDdtWP8QaBeL5GqK7xpCPsf5TQbQzf5AzAoIUXz0XALkdDvIZY7rff+ZFOroBlZzWrm2SUa9GqIfHpOKnw==",
+  "dgSpecHash": "a6YJ7jLqi0CCzGPCHya94H/8TLPWV1XEcUp9eOjfjO8Dbf91vfK86fP745pLdqjneInMLFUYV2wW8kYAA7nY5w==",
   "success": true,
   "projectFilePath": "D:\\Hahn_Softwareentwicklung\\Server\\Hahn_Softwareentwicklung.Infrastructure\\Hahn_Softwareentwicklung.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yurib\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\yurib\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\yurib\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

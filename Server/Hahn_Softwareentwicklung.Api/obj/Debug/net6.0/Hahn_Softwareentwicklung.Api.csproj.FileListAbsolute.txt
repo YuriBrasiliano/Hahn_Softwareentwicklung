@@ -47,3 +47,7 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.Core.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Mapster.DependencyInjection.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\FluentValidation.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\obj\Debug\net6.0\Hahn_Softwareentwicklung.Api.MvcApplicationPartsAssemblyInfo.cs
