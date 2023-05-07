@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 using ErrorOr;
 using MediatR;
 using MapsterMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hahn_Softwareentwicklung.Api.Controllers;
 
-
-
 [Route("auth")]
+[AllowAnonymous]
 
 public class AuthenticationController : ApiController{
 

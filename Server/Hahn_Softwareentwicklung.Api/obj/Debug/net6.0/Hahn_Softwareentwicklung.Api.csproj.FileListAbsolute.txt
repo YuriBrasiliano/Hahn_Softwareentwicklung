@@ -51,3 +51,6 @@ D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\obj\Debug\net6.0\Hahn_Softwareentwicklung.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Hahn_Softwareentwicklung\Server\Hahn_Softwareentwicklung.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
