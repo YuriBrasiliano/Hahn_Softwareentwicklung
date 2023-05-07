@@ -4,8 +4,10 @@ using Hahn_Softwareentwicklung.Application.Authentication.Commands.Register;
 using Microsoft.AspNetCore.Mvc;
 using ErrorOr;
 using MediatR;
+using Hahn_Softwareentwicklung.Domain.Common.Errors;
 using MapsterMapper;
 using Microsoft.AspNetCore.Authorization;
+using Hahn_Softwareentwicklung.Application.Authentication.Queries.Login;
 
 namespace Hahn_Softwareentwicklung.Api.Controllers;
 
@@ -40,9 +42,17 @@ public class AuthenticationController : ApiController{
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request){
 
-        var query = _mapper.Map<RegisterCommand>(request);
+        var query = _mapper.Map<LoginQuery>(request);
         
-        var authResult = await _mediator.Send(query);       
+        var authResult = await _mediator.Send(query);
+
+        if(authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+        {
+            return Problem(
+                statusCode: StatusCodes.Status401Unauthorized,
+                title: authResult.FirstError.Description
+            );
+        }  
         
         return authResult.Match(
             authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
