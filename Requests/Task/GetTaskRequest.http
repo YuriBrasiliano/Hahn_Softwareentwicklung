@@ -1,0 +1,6 @@
+@host = https://localhost:7174
+@id = 938020d7-7ad9-4652-be21-d87fcca9d0ad
+
+GET {{host}}/jobs/{{id}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkMjkxY2Y0Ni0zYzdmLTRlYzUtOTdmZi1kYTZhNjgxM2VjY2YiLCJqdGkiOiIxODQ1Yjc1MC0zZjZmLTQ3ZWUtOTUzNS0wY2RjMGQ4Njc2ODMiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUwNTA2NCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.Sm0r85ZvnmUCrEYm7C-9UV0aipFNuo7CkJNDQ7sdSes

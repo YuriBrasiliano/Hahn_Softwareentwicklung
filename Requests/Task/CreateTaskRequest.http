@@ -1,0 +1,14 @@
+@host = https://localhost:7174
+
+POST {{host}}/jobs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NzQ3YzVkNC1kMWFkLTQxZGItODY2My03ZmFhZjZhNmNiYzYiLCJqdGkiOiIxYjcwMDUzMC04NWNmLTQ2NTAtOTdjMi1mNzMzNWIzMTUxMGUiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUwMzY1OSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.fnSnMkH5OIdF3KsCXaeOPmEg7wYU2kXg_MnxwjWZE8g
+
+{
+    "Name" : "Create UI for Hahn",
+    "Description" : "Develop an IU app using Angular",
+    "TaskLocation" : "Online",
+    "TaskLink" : "None",
+    "TaskGroup" : "Alone",
+    "TaskDateTime": "2023-05-07T16:00:00"
+}

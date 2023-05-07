@@ -1,0 +1,16 @@
+@host = https://localhost:7174
+@id = 00000000-0000-0000-0000-000000000000
+
+DELETE {{host}}/tasks/{{id}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZDQ3MTJiOC1jOWMxLTQ3Y2ItOTJmNi02YjU2Y2MwMWE2ODkiLCJqdGkiOiI1NjYyYmI3OC05ZTE4LTRhNDAtYTlhNi1jMjI1ODAxOTI0YmEiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzQ5MDc1OCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.Qr9vTqbRKw9rRlYNPObckkZdf1-Zh1eEMnN7mxDmXyQ
+
+{
+    "name" : "Create UI for Hahn",
+    "description" : "Develop an IU app using Angular",
+    "taskLocation" : "Online",
+    "taskLink" : "None",
+    "taskGroup" : "Alone",
+    "registerDateTime" : "2023-05-07T16:00:00",
+    "taskDateTime": "2023-05-07T16:00:00"
+}
