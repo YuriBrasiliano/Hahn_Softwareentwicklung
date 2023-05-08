@@ -22,6 +22,7 @@ public class JobsController : ApiController
     {
         var job = new Job(
             Guid.NewGuid(),
+            request.UserId,
             request.Name,
             request.Description,
             request.TaskLocation,
@@ -35,6 +36,7 @@ public class JobsController : ApiController
 
         var response = new JobResponse(
             job.Id,
+            job.UserId,
             job.Name,
             job.Description,
             job.TaskLocation,
@@ -55,6 +57,7 @@ public class JobsController : ApiController
         Job job = _jobService.GetJob(id);
         var response = new JobResponse(
             job.Id,
+            job.UserId,
             job.Name,
             job.Description,
             job.TaskLocation,
@@ -76,4 +79,27 @@ public class JobsController : ApiController
     {
         return Ok(id);
     }
+    [HttpGet("alltasks")]
+    public IActionResult GetAllJobs()
+    {
+        return Ok();
+    }
+    
+    [HttpGet("usertasks")]
+    public IActionResult GetUserJobs(GetUserJobRequest request)
+    {
+    List<Job> jobs = _jobService.GetUserJobs(request.UserId);
+    List<JobResponse> jobResponses = jobs.Select(job => new JobResponse(
+        job.Id,
+        job.UserId,
+        job.Name,
+        job.Description,
+        job.TaskLocation,
+        job.TaskLink,
+        job.TaskGroup,
+        job.RegisterDateTime,
+        job.TaskDateTime
+    )).ToList();
+    return Ok(jobResponses);
 }
+    }

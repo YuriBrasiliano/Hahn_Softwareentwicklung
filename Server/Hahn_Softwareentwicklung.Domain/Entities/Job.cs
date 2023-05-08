@@ -1,7 +1,8 @@
 namespace Hahn_Softwareentwicklung.Domain.Entities;
 
 public class Job
-{   public Guid Id { get;}
+{   public Guid Id { get;} = Guid.NewGuid();
+    public string UserId {get;}
     public string Name {get;}
     public string Description {get;} 
     public string TaskLocation {get;} 
@@ -12,6 +13,7 @@ public class Job
 
 
 public Job(Guid id,
+            string userId,
            string name,
            string description,
            string taskLocation,
@@ -22,6 +24,7 @@ public Job(Guid id,
            )
 {
     Id = id;
+    UserId = userId;
     Name = name;
     Description = description;
     TaskLocation = taskLocation;

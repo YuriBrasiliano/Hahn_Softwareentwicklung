@@ -7,5 +7,8 @@ public interface IJobService
 {
     void CreateJob(Job job);
 
+    List<Job> GetAllJobs();
+    List<Job> GetUserJobs(string UserId);
+
     Job GetJob (Guid id);
 }

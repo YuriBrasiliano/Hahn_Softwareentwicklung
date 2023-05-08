@@ -1,9 +1,9 @@
 @host = https://localhost:7174
-@id = 00000000-0000-0000-0000-000000000000
+@id = a14c1022-4e0c-46c6-8acc-0c822f88f9f2
 
-DELETE {{host}}/tasks/{{id}}
+DELETE {{host}}/jobs/{{id}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZDQ3MTJiOC1jOWMxLTQ3Y2ItOTJmNi02YjU2Y2MwMWE2ODkiLCJqdGkiOiI1NjYyYmI3OC05ZTE4LTRhNDAtYTlhNi1jMjI1ODAxOTI0YmEiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzQ5MDc1OCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.Qr9vTqbRKw9rRlYNPObckkZdf1-Zh1eEMnN7mxDmXyQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOWIzZGI3MC04MzFmLTQ4NjAtYmY1NC1hMjM1MzkxNzYwYmUiLCJqdGkiOiJiZTE4MjZjNS0zMzNhLTRiMzEtOTUxMS0yNTdhMTZjZDg5MjciLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUyMjE0OSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.iIF3UkefzplpC-1k4pc6HfMq8yvzSYtvfOhIpT7MITg
 
 {
     "name" : "Create UI for Hahn",

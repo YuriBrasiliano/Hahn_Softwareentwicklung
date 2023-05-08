@@ -1,15 +1,10 @@
 @host = https://localhost:7174
 
-POST {{host}}/jobs
+
+GET {{host}}/jobs/usertasks
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhNmIwNTMyOS0wYzIyLTRjZTItODU5MS1mZGZkYjU4NmJlNjUiLCJqdGkiOiI0NTQzZmI4Zi0xOGMwLTQ3MzYtYjBkYi05MWYxMTc3OTk1MWUiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUyNDgyOSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.RA85tILrbEfZGzhQMOrf99knZ2JIiVDDPcyMSzxtW-0
 
 {
-    "Name" : "Create UI for Hahn",
-    "UserId" : "11111111111111111111111",
-    "Description" : "Develop an IU app using Angular",
-    "TaskLocation" : "Online",
-    "TaskLink" : "None",
-    "TaskGroup" : "Alone",
-    "TaskDateTime": "2023-05-07T16:00:00"
+    "UserId": "a6b05329-0c22-4ce2-8591-fdfdb586be65"
 }
