@@ -5,13 +5,9 @@
         <form [formGroup] = "singupForm">
           <label for="chk" aria-hidden="true">Sign up</label>
           <input type="text" name="firstName" placeholder="First Name" formControlName = "firstName">
-          <div class="error"> </div>
           <input type="text" name="lastName" placeholder="Last Name" formControlName = "lastName">
-          <div class="error"> </div>
           <input type="email" name="email" placeholder="Email" formControlName = "email">
-          <div class="error"> </div>
           <input type="password" name="password" placeholder="Password" formControlName = "password">
-          <div class="error"> </div>
           <button (click)="submitSignUp()">Sign up</button>
         </form>
       </div>
