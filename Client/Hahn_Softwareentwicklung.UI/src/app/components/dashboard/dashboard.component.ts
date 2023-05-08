@@ -14,9 +14,10 @@ export class DashboardComponent {
   constructor(private auth: AuthService, private api : ApiService) { }
 
   ngOnInit(){
-    const UserId = "7ecbdd48-d272-4149-9145-c465fb5f732e";
+    const UserId = localStorage.getItem("id");
+    if (UserId != null) {
     this.api.getUserTasks(UserId).subscribe(res => {this.userJobs = res;})
-  }
+  }}
   
   logout(){
     this.auth.signOut();

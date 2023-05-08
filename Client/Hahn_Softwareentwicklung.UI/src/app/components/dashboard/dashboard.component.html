@@ -1,11 +1,45 @@
-<div class="navbar-nav">
-    <div class="nav-item text-nowrap">
-        <a style="background: red;
-        color: #fff;
-        border-radius: 4px;
-        margin: 10px;" class="nav-link px-3 cursor-pointer" (click)="logout()">Sign out</a>
-    </div>
-</div>
+<div class="topContainer">
+<div class="jobs">
+<a href="dashboard/addtask">Create new Task</a>
+<table border="1" class="jobstable" *ngIf="userJobs.length > 0">
+    <caption>Your Tasks</caption>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Date</th>      
+      <th>Location</th>
+      <th>Link</th>
+      <th>Group</th>
+      <th>Created</th>
+      <th>Edit</th>
+    </tr>
+    <tr *ngFor = 'let job of userJobs'>
+        <td height="30">{{job.name}}</td>
+        <td>{{job.description}}</td>
+        <td>{{job.taskDateTime}}</td>      
+        <td>{{job.taskLocation}}</td>
+        <td>{{job.taskLink}}</td>
+        <td>{{job.taskGroup}}</td>
+        <td>{{job.registerDateTime}}</td>
+        <td><a [routerLink]="['/dashboard' , 'edittask' , job.id]"> Edit Task</a></td>
+    </tr>
+  </table>
+  <p *ngIf="userJobs.length <=0" class="notasks"> You don't have Tasks</p>
 
-<ul *ngFor = 'let job of userJobs'>
-    <li>{{job.description}}</li>
+  
+
+  <footer>
+<div class="col-md-6 item text">
+    <h3>Hahn Software</h3>
+    <p>Our development team is as individual as our code. As passionated software developers with experiences in many different technologies we see ourselves as software specialists and partner for your next project.</p>
+    <p>"As complex as needed, but as easy as possible." Whenever possible, we orientate ourselves on the SOLID principles to be able to deliver future-proof and sustainable software. With object orientated software design, based on solid principles, we enable our customers to reduce overall costs long-term.</p>
+    <p>Thanks to our long experience and diversified technologie stack we are able to adapt to your processes. We create transparency and improve pace in our procedures with our agile process environment which results in faster deployment for our customers.
+
+    </p>
+    </div>
+        
+<p class="copyright">Yuri Brasiliano © 2023</p>
+
+</footer>
+</div>
+</div>

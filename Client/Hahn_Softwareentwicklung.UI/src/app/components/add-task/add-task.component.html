@@ -1,0 +1,16 @@
+<div class="topContainer">
+  <div class="main">
+    <div class="signup">
+      <form (ngSubmit)="addTask()">
+        <label for="chk" aria-hidden="true">Create a Task</label>
+        <input type="text" name="taskName" placeholder="Name" [(ngModel)] = "addTaskRequest.name">
+        <input type="text" name="taskDescription" placeholder="Description" [(ngModel)] = "addTaskRequest.description">
+        <input type="text" name="taskLocation" placeholder="Where?" [(ngModel)] = "addTaskRequest.taskLocation">
+        <input type="text" name="taskLink" placeholder="Link" [(ngModel)] = "addTaskRequest.taskLink">
+        <input type="text" name="taskGroup" placeholder="With Who?" [(ngModel)] = "addTaskRequest.taskGroup">
+        <input type="datetime-local" name="taskDateTime" placeholder="When?" [(ngModel)] = "addTaskRequest.taskDateTime">
+        <button type="submit">Create Task</button>
+      </form>
+    </div>
+  </div>
+</div>

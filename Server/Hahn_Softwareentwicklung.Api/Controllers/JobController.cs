@@ -51,24 +51,23 @@ public class JobsController : ApiController
             value: response);
     }
 
-    [HttpGet("{id:guid}")]
-    public IActionResult GetJob(Guid id)
-    {
-        Job job = _jobService.GetJob(id);
-        var response = new JobResponse(
-            job.Id,
-            job.UserId,
-            job.Name,
-            job.Description,
-            job.TaskLocation,
-            job.TaskLink,
-            job.TaskGroup,
-            job.RegisterDateTime,
-            job.TaskDateTime
-        );
-        return Ok(response);
-        
-    }
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> GetJob(Guid id)
+        {
+            Job job = await Task.Run(() => _jobService.GetJob(id));
+            var response = new JobResponse(
+                job.Id,
+                job.UserId,
+                job.Name,
+                job.Description,
+                job.TaskLocation,
+                job.TaskLink,
+                job.TaskGroup,
+                job.RegisterDateTime,
+                job.TaskDateTime
+            );
+            return Ok(response);
+        }
     [HttpPut("{id:guid}")]
     public IActionResult UpsertJob(Guid id, UpsertJobRequest request)
     {

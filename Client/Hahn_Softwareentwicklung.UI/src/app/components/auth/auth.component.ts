@@ -17,9 +17,6 @@ export class AuthComponent implements OnInit {
   
   loginForm!: FormGroup;
   singupForm!: FormGroup;
-  type: string = 'password';
-  isText: boolean = false;
-  eyeIcon: string = 'fa-eye-slash';
 
   constructor(private formBuilder: FormBuilder, private toast: NgToastService, private router: Router, public authService : AuthService){}
 
@@ -47,6 +44,7 @@ export class AuthComponent implements OnInit {
         {
           this.singupForm.reset();
           this.authService.storeToken(res.token);
+          this.authService.storeIdUser(res.id);
           this.toast.success({detail:"SUCCESS", summary:"Welcome " + res.firstName + " " + res.lastName, duration: 5000});
           this.router.navigate(['dashboard'])
       }, error => {
