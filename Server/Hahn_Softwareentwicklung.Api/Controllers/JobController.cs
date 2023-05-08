@@ -85,10 +85,10 @@ public class JobsController : ApiController
         return Ok();
     }
     
-    [HttpGet("usertasks")]
-    public IActionResult GetUserJobs(GetUserJobRequest request)
+    [HttpGet("usertasks/{UserId}")]
+    public IActionResult GetUserJobs(string UserId)
     {
-    List<Job> jobs = _jobService.GetUserJobs(request.UserId);
+    List<Job> jobs = _jobService.GetUserJobs(UserId);
     List<JobResponse> jobResponses = jobs.Select(job => new JobResponse(
         job.Id,
         job.UserId,

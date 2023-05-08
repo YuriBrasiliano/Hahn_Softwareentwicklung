@@ -6,3 +6,6 @@
         margin: 10px;" class="nav-link px-3 cursor-pointer" (click)="logout()">Sign out</a>
     </div>
 </div>
+
+<ul *ngFor = 'let job of userJobs'>
+    <li>{{job.description}}</li>

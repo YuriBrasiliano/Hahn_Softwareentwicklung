@@ -3,8 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginModel } from 'src/app/models/LoginModel';
 import { SignUpModel } from 'src/app/models/SignUpMode';
-import { AuthService } from 'src/app/service/auth.service';
 import { NgToastService } from 'ng-angular-popup';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({

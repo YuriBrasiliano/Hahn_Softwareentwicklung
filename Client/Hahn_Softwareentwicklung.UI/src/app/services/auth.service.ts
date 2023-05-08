@@ -1,6 +1,7 @@
 import {Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { TokenApiModel } from "../models/token-api.model";
 
 
 @Injectable(
@@ -11,6 +12,8 @@ import { Router } from '@angular/router';
 
 export class AuthService
 {
+    
+  private baseUrl: string = 'https://localhost:7174/users';
 
     constructor(private http: HttpClient, private router: Router){}
 
@@ -49,5 +52,8 @@ export class AuthService
     
       isLoggedIn(): boolean{
         return !!localStorage.getItem('token')
+      }
+      renewToken(tokenApi : TokenApiModel){
+        return this.http.post<any>(`${this.baseUrl}refresh`, tokenApi)
       }
 }

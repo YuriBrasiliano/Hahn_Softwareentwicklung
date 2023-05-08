@@ -2,11 +2,11 @@
 
 POST {{host}}/jobs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhNmIwNTMyOS0wYzIyLTRjZTItODU5MS1mZGZkYjU4NmJlNjUiLCJqdGkiOiI0NTQzZmI4Zi0xOGMwLTQ3MzYtYjBkYi05MWYxMTc3OTk1MWUiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUyNDgyOSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.RA85tILrbEfZGzhQMOrf99knZ2JIiVDDPcyMSzxtW-0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ZWNiZGQ0OC1kMjcyLTQxNDktOTE0NS1jNDY1ZmI1ZjczMmUiLCJqdGkiOiIxYWMzNWNkZS1jYjQ0LTQ5MDAtODA4Yi00Nzk0Y2VhODVhMWQiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUzMzEzNSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.6F8DoGCBUt5UJ_vY6qWdCR9wBhRl2DKnLcC8zoa1F4k
 
 {
     "Name" : "Create UI for Hahn",
-    "UserId" : "11111111111111111111111",
+    "UserId" : "7ecbdd48-d272-4149-9145-c465fb5f732e",
     "Description" : "Develop an IU app using Angular",
     "TaskLocation" : "Online",
     "TaskLink" : "None",

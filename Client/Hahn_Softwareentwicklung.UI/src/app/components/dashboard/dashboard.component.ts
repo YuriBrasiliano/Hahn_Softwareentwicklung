@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/service/auth.service';
+import { ApiService } from 'src/app/services/api.service';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,8 +10,14 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class DashboardComponent {
 
-  constructor(private auth: AuthService) { }
+  public userJobs:any = [];
+  constructor(private auth: AuthService, private api : ApiService) { }
 
+  ngOnInit(){
+    const UserId = "7ecbdd48-d272-4149-9145-c465fb5f732e";
+    this.api.getUserTasks(UserId).subscribe(res => {this.userJobs = res;})
+  }
+  
   logout(){
     this.auth.signOut();
   }
