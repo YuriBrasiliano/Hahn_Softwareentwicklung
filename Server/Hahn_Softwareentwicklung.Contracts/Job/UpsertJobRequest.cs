@@ -1,6 +1,7 @@
 namespace Hahn_Softwareentwicklung.Contracts.Job;
 
 public record UpsertJobRequest(
+    string UserId,
     string Name,
     string Description,
     string TaskLocation,

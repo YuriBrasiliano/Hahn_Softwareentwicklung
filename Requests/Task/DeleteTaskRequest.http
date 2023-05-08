@@ -1,16 +1,6 @@
 @host = https://localhost:7174
-@id = a14c1022-4e0c-46c6-8acc-0c822f88f9f2
+@id = 8abb8c3d-9a99-4014-b7db-81b830ad9704
 
 DELETE {{host}}/jobs/{{id}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOWIzZGI3MC04MzFmLTQ4NjAtYmY1NC1hMjM1MzkxNzYwYmUiLCJqdGkiOiJiZTE4MjZjNS0zMzNhLTRiMzEtOTUxMS0yNTdhMTZjZDg5MjciLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUyMjE0OSwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.iIF3UkefzplpC-1k4pc6HfMq8yvzSYtvfOhIpT7MITg
-
-{
-    "name" : "Create UI for Hahn",
-    "description" : "Develop an IU app using Angular",
-    "taskLocation" : "Online",
-    "taskLink" : "None",
-    "taskGroup" : "Alone",
-    "registerDateTime" : "2023-05-07T16:00:00",
-    "taskDateTime": "2023-05-07T16:00:00"
-}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4YWJiOGMzZC05YTk5LTQwMTQtYjdkYi04MWI4MzBhZDk3MDQiLCJqdGkiOiIwMGQwNGFlMy0xYmRhLTQ0MTEtOWJlMC1kMGI1MGIxODE5NzgiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUzNDM0NCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.CdNhXiFNbr5wao9KP0o1itfXFFPFSNSkTOoUkpQWyWc

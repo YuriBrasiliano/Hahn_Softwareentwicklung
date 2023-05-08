@@ -72,17 +72,26 @@ public class JobsController : ApiController
     [HttpPut("{id:guid}")]
     public IActionResult UpsertJob(Guid id, UpsertJobRequest request)
     {
-        return Ok(request);
+        var job = new Job(
+            id,
+            request.UserId,
+            request.Name,
+            request.Description,
+            request.TaskLocation,
+            request.TaskLink,
+            request.TaskGroup,
+            DateTime.UtcNow,
+            request.TaskDateTime
+        );
+         _jobService.UpsertJob(job);
+
+        return NoContent();
     }
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteJob(Guid id)
     {
-        return Ok(id);
-    }
-    [HttpGet("alltasks")]
-    public IActionResult GetAllJobs()
-    {
-        return Ok();
+        _jobService.DeleteJob(id);
+        return NoContent();
     }
     
     [HttpGet("usertasks/{UserId}")]

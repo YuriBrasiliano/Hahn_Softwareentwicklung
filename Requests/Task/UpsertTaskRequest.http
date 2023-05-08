@@ -1,16 +1,18 @@
 @host = https://localhost:7174
-@id = 00000000-0000-0000-0000-000000000000
+@id = 97bf11ee-6d18-4dfb-938f-462aeea208df
 
-PUT {{host}}/tasks/{{id}}
+PUT {{host}}/jobs/{{id}}
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZDQ3MTJiOC1jOWMxLTQ3Y2ItOTJmNi02YjU2Y2MwMWE2ODkiLCJqdGkiOiI1NjYyYmI3OC05ZTE4LTRhNDAtYTlhNi1jMjI1ODAxOTI0YmEiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzQ5MDc1OCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.Qr9vTqbRKw9rRlYNPObckkZdf1-Zh1eEMnN7mxDmXyQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4YWJiOGMzZC05YTk5LTQwMTQtYjdkYi04MWI4MzBhZDk3MDQiLCJqdGkiOiIwMGQwNGFlMy0xYmRhLTQ0MTEtOWJlMC1kMGI1MGIxODE5NzgiLCJnaXZlbl9uYW1lIjoiWXVyaSIsImZhbWlseV9uYW1lIjoiQnJhc2lsaWFubyIsImV4cCI6MTY4MzUzNDM0NCwiaXNzIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIiwiYXVkIjoiSGFobl9Tb2Z0d2FyZWVudHdpY2tsdW5nIn0.CdNhXiFNbr5wao9KP0o1itfXFFPFSNSkTOoUkpQWyWc
 
 {
-    "name" : "Create UI for Hahn",
-    "description" : "Develop an IU app using Angular",
-    "taskLocation" : "Online",
-    "taskLink" : "None",
-    "taskGroup" : "Alone",
-    "registerDateTime" : "2023-05-07T16:00:00",
+    "id": "97bf11ee-6d18-4dfb-938f-462aeea208df",
+    "userId": "8abb8c3d-9a99-4014-b7db-81b830ad9704",
+    "name": "11111 Alterado com sucesso",
+    "description": "Develop an IU app using Angular",
+    "taskLocation": "Online",
+    "taskLink": "None",
+    "taskGroup": "Alone",
+    "registerDateTime": "2023-05-08T07:27:44.8398003Z",
     "taskDateTime": "2023-05-07T16:00:00"
 }

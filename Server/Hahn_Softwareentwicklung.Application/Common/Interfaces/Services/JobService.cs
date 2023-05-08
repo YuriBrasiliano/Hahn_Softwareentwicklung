@@ -10,16 +10,30 @@ public class JobService : IJobService
         _job.Add(job);
     }
 
-    public List<Job> GetAllJobs(){
-        return _job;
-    }
-
     public List<Job> GetUserJobs(string UserId){
         return _job.FindAll(job => job.UserId == UserId);
     }
 
-    Job IJobService.GetJob(Guid id)
+    public void DeleteJob(Guid id)
+    {
+        _job.RemoveAll(u => u.Id == id);
+    }
+
+    public Job GetJob(Guid id)
     {
         return _job.Single(u => u.Id == id);
+    }
+
+    public void UpsertJob(Job job)
+    {
+        int index = _job.FindIndex(j => j.Id == job.Id);
+        if (index != -1)
+        {
+            _job[index] = job;
+        }
+        else
+        {
+            _job.Add(job);
+        }
     }
 }
